@@ -2,10 +2,34 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
     <head>
         <title>Spring Security Example</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
     </head>
     <body>
         <h1>Welcome!</h1>
 
         <p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
+        
+        <div>
+        Username:	<input type="text" id="username" name="username" />
+        </div>
+        <div>
+        Password:	<input type="text" id="password" name="password" />
+        </div>
+        <div>
+        Email:	<input type="text" id="email" name="email" />
+        </div>
+        
+        <div>
+        Role :	<input type="text" id="role" name="role" />
+        </div>
+        <button id="save">Save</button>
+        
+        <script>
+        $( document ).ready(function() {
+        	 
+        	});
+        	
+        
+        </script>
     </body>
 </html>

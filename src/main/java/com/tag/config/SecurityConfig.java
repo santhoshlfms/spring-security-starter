@@ -75,7 +75,7 @@ public class SecurityConfig {
 					.authenticated()
 					.and();
 			http.formLogin().loginPage("/login")
-					.defaultSuccessUrl("/dashboard/")
+					.defaultSuccessUrl("/dashboard/") //this is were the pages redirect after 
 					.permitAll()
 					.and();
 			http.sessionManagement()
